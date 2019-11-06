@@ -8,19 +8,43 @@ public class Tp4Exo4 {
 		// TODO Auto-generated method stub
 		String text = JOptionPane.showInputDialog(null, "Entrer un nombre: ");
 		int nb = Integer.parseInt(text);
-		int n = 0;
-		for (int i = 1; i <= nb; i++) {
-			int resultat = nb % i;
+		boolean verif = true;
+		int resultat = 0;
+		String chaine = premier(nb);
+		for (int i = 2; i <= nb/2; i++) {
+			resultat = nb % i;
 			if (resultat == 0) {
-				n++;
-			}
+				verif = false;
+				break;
+			}			
 		}
-		if (n <= 2) {
-			JOptionPane.showMessageDialog(null, nb + " est un nombre premier");
+		if (verif) {
+			JOptionPane.showMessageDialog(null, nb + " est un nombre premier" +  "\nLa liste des nombre premier sont\n" + chaine);
 		}
 		else {
-			JOptionPane.showMessageDialog(null, nb + " N'est pas un nombre premier");
+			JOptionPane.showMessageDialog(null, nb + " N'est pas un nombre premier"  + "\nLa liste des nombre premier sont\n" + chaine);
 		}
+	}
+	
+	public static String premier(int n) {
+		String chaine = "";
+		for(int d=2;d<n; d++) {
+			if ( estPremier(d) == true ) {
+				chaine += d;
+				chaine += " \n";
+			}
+		}
+		return chaine;
+	}
+	
+	public static boolean estPremier(int n) {
+		boolean flag = true;
+		for (int e = 2; e < n; e++) {
+			if (n%e ==0) {
+				flag = false;			
+			}
+		}
+		return flag;
 	}
 
 }
