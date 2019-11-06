@@ -9,12 +9,12 @@ public class Tp4Exo6 {
 		String text = JOptionPane.showInputDialog(null, "Entrer un nombre: ");
 		int saisir = Integer.parseInt(text);
 		int nb = 0;
-		int n = 1;
+		int n = 2;
 		int somme = 0;
 		String chaine = "";
 		while (nb < saisir) {
 			n++;
-			if (nombrePremier(n)) {
+			if (nombrePremier(n)) {				
 				nb++;
 				chaine += n;
 				chaine += " + ";
@@ -28,11 +28,13 @@ public class Tp4Exo6 {
 	public static boolean nombrePremier(int nb) {
 		boolean flag = true;
 		for (int i = 2; i < nb; i++) {
-			if (nb%i==0) {
+			int resultat = nb%i;
+			if (resultat == 0) {
 				flag = false;
 			}
 		}
 		return flag;
 	}
+	
 
 }
