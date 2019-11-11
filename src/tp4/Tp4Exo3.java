@@ -14,6 +14,7 @@ public class Tp4Exo3 {
 			chaine += "*";
 			System.out.println(chaine);
 		}
+		Saisir.close();
 	}
 
 }

@@ -48,6 +48,8 @@ public class Tp3Exo1 {
         System.out.print("Saisir une chaine de caracateres : ");
         valeur8=lecture_clavier.next().charAt(0);
         System.out.println("char = "+valeur8);
+        
+        lecture_clavier.close();
 	}
 
 }
