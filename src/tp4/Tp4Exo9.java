@@ -9,9 +9,7 @@ public class Tp4Exo9 {
 			entier = (long) Math.pow(2,i);
 			System.out.println("2 puissance "+i+" = "+entier);
 		}
-		
-		
-		
+			
 	}
 
 }

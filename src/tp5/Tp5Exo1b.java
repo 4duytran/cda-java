@@ -26,11 +26,12 @@ public class Tp5Exo1b {
 				{
 					val = tab[i][j];
 				}				
-			}		
+			}
+			System.out.println("Le plus grand élément de tableau "+(i+1)+" est "+val);		
 		}
-		System.out.println("Le plus grand élément dela matrice est "+val);
 		sc.close();
-	
+
+				
 	}
 
 }
