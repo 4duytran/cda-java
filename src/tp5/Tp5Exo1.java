@@ -28,7 +28,7 @@ public class Tp5Exo1 {
 			}
 		}
 		System.out.println("Le plus grand valeur dans ce tableau est: "+plusGrandValeur);
-		
+		sc.close();
 	}
 
 }
