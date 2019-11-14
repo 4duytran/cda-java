@@ -12,9 +12,10 @@ public class Tp4Exo6 {
 		int n = 2;
 		int somme = 0;
 		String chaine = "";
+		
 		while (nb < saisir) {
 			n++;
-			if (nombrePremier(n)) {				
+			if (Tp4Exo4.estPremier(n)) {				
 				nb++;
 				chaine += n;
 				chaine += " + ";
@@ -23,17 +24,6 @@ public class Tp4Exo6 {
 		}
 		JOptionPane.showMessageDialog(null, chaine.substring(0, chaine.length() - 2) + " = " + somme);
 
-	}
-	
-	public static boolean nombrePremier(int nb) {
-		boolean flag = true;
-		for (int i = 2; i < nb; i++) {
-			int resultat = nb%i;
-			if (resultat == 0) {
-				flag = false;
-			}
-		}
-		return flag;
 	}
 	
 
