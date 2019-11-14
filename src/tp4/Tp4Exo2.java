@@ -22,3 +22,4 @@ public class Tp4Exo2 {
 		JOptionPane.showMessageDialog(null, "Le moyen est de ces " + nb_note +" notes est " + resultat);
 	}
 }
+ 

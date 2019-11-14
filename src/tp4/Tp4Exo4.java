@@ -18,7 +18,7 @@ public class Tp4Exo4 {
 				break;
 			}			
 		}
-		if (verif) {
+		if (verif && nb>=2) {
 			JOptionPane.showMessageDialog(null, nb + " est un nombre premier" +  "\nLa liste des nombre premier sont\n" + chaine);
 		}
 		else {
