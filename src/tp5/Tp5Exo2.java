@@ -20,7 +20,7 @@ public class Tp5Exo2 {
 		for (int i=0; i<tab1.length;i++) 
 		{
 			for (int j=0; j<tab1[i].length; j++) {
-				System.out.println("Entrer éléments pour le tableau1: "+i+" "+j);
+				System.out.println("Entrer éléments pour le tableau 1: "+i+" "+j);
 				tab1[i][j] = sc.nextInt();
 			}
 		}
@@ -39,9 +39,9 @@ public class Tp5Exo2 {
 			}			
 		}
 		
-		System.out.println("La matrice 1 \r");
+		System.out.println("La matrice 1");
 		tabAffichage(tab1);
-		System.out.println("La matrice 2 \r");
+		System.out.println("La matrice 2");
 		tabAffichage(tab2);
 		int tabMultiple [][] = new int[ligne1][col2];
 		
@@ -54,15 +54,13 @@ public class Tp5Exo2 {
               for (int k = 0; k < ligne2; k++)
               {
                  resultat += tab1[c][k]*tab2[k][d];
-              }
-              
+              }             
               tabMultiple[c][d] = resultat;
-              resultat= 0;
-              
+              resultat= 0;  
            }
         }
 		
-		System.out.println("La Multiplication de 2 matrice \r");
+		System.out.println("La Multiplication de 2 matrice");
 		tabAffichage(tabMultiple);
 	
 		sc.close();
@@ -76,7 +74,7 @@ public class Tp5Exo2 {
 		{
 			for (j=0; j<tab[i].length;j++)
 			{
-				System.out.print(tab[i][j]+" ");
+				System.out.print(tab[i][j]+"  ");
 			}
 			System.out.println();
 		}
