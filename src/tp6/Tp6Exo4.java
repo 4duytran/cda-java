@@ -26,10 +26,6 @@ public class Tp6Exo4 {
 		}
 		char maTab[]=autreChaine.toCharArray();
 		System.out.println(triTableau(maTab));;
-		
-		
-
-
 	}
 	
 	
