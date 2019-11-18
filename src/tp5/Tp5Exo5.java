@@ -12,9 +12,7 @@ public class Tp5Exo5 {
 		boolean flag = true;
 		for (int i=0; i<mot.length();i++ ) 
 		{
-			++j;
-			System.out.println(mot.substring(i, j));
-			System.out.println(mot.substring(mot.length()-j, mot.length()-i));			
+			++j;			
 			if(mot.substring(i, j).equals(mot.substring(mot.length()-j, mot.length()-i))) 
 			{
 				flag = true;
@@ -34,6 +32,8 @@ public class Tp5Exo5 {
 		{
 			System.out.println("N'est pas un mot Palindrome");
 		}
+		
+		sc.close();
 	}
 
 }
