@@ -12,27 +12,25 @@ public class Tp5Exo4 {
 		
 		System.out.println("Entrer nombre de note: ");
 		int nb = sc.nextInt();
-		double tabNote[] = new double[nb];
+		float tabNote[] = new float[nb];
 		int compteur = 0;
-		double somme = 0;
-		double lesNote=0;
+		float somme = 0;
+		float lesNote=0;
 		int i=0;
 		while (compteur < nb) {
 			System.out.println("Enter nombre de note "+(compteur+1)+" : ");
 			float note = sc.nextFloat();
+			note = (float) (Math.floor(note*100)/100);
 			tabNote[compteur] = note;
 			lesNote += note;
 			compteur++;
 		}
 		
 		somme = (lesNote / nb);
-		String s = String.format("%.2f", somme);
-		String []c = s.split(",");
-		s = String.join(".", c);
-		somme = Double.parseDouble(s);
+		somme = (float) (Math.floor(somme*100)/100);
 		System.out.println(somme);	
 		
-		for (double note: tabNote) 
+		for (float note: tabNote) 
 		{
 			if (note>somme) 
 			{
