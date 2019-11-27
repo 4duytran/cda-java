@@ -9,23 +9,25 @@ public class Tp6Exo4 {
 		// TODO Auto-generated method stub
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Entrer une chaine de caractère: ");
+		System.out.println("Entrer une chaine de caractÃ¨re: ");
 		String maChaine = sc.nextLine().toLowerCase();
 		String autreChaine="";
-		
+		StringBuilder buffer = new StringBuilder();
 		for (int i=0; i<maChaine.length();i++)
 		{
 			if(maChaine.charAt(i)== ' ')
 			{
-				autreChaine += "";
+				buffer.append("");
 			}
 			else
 			{
-				autreChaine += maChaine.charAt(i);
+				buffer.append(maChaine.charAt(i));
 			}
 		}
+		autreChaine = buffer.toString();
 		char maTab[]=autreChaine.toCharArray();
 		System.out.println(triTableau(maTab));;
+		sc.close();
 	}
 	
 	
